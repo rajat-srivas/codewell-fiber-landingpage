@@ -1,0 +1,15 @@
+$violet: #5c33f6;
+$lightGrey: #4c4c4c;
+$mistGreen: #43a047;
+$lightCream: #f3efe4;
+
+.hero-section {
+  height: 100vh;
+  background-color: $lightCream;
+}
+
+@media screen and (max-width: 500px) {
+  .hero-section {
+    height: auto;
+  }
+}

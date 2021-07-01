@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import HeroSection from './src/component/hero/hero.component';
+import WhyFiber from './src/component/why-fiber/why-fiber.component';
+import Portfolio from './src/component/portfolio/portfolio.component';
+import Footer from './src/component/footer/footer.component';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <div className='hero-section'>
+        <HeroSection />
+      </div>
+      <WhyFiber></WhyFiber>
+      <Portfolio></Portfolio>
+      <Footer></Footer>
     </div>
   );
 }
