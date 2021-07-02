@@ -3,6 +3,7 @@ import HeroSection from './src/component/hero/hero.component';
 import WhyFiber from './src/component/why-fiber/why-fiber.component';
 import Portfolio from './src/component/portfolio/portfolio.component';
 import Footer from './src/component/footer/footer.component';
+import SignUp from './src/component/signup/signup.component';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <WhyFiber></WhyFiber>
       <Portfolio></Portfolio>
       <Footer></Footer>
+      <SignUp></SignUp>
     </div>
   );
 }

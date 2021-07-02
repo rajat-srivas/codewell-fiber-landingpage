@@ -7,6 +7,7 @@ $lightCream: #f3efe4;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 
   &__logo {
     flex-basis: 10%;
@@ -19,7 +20,7 @@ $lightCream: #f3efe4;
   }
 
   &__items {
-    flex-basis: 40%;
+    flex-basis: 35%;
     ul {
       display: flex;
       justify-content: center;
@@ -38,8 +39,8 @@ $lightCream: #f3efe4;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-basis: 14%;
-
+    flex-basis: 16%;
+    min-width: 150px;
     &__login {
       font-weight: bold;
     }
@@ -55,7 +56,33 @@ $lightCream: #f3efe4;
     display: inline-block;
     cursor: pointer;
   }
-  .navbar__items,
+
+  .navbar__items.open {
+    transform: translateY(0);
+  }
+
+  .navbar__items {
+    background-color: $violet;
+    padding: 30px 10px 10px 20px;
+    width: 100%;
+    position: absolute;
+    top: 140%;
+    transform: translateY(-150%);
+    ul {
+      flex-direction: column;
+      li {
+        margin-bottom: 20px;
+        color: white;
+        font-weight: bold;
+
+        &:hover {
+          color: whitesmoke;
+        }
+      }
+    }
+    transition: all 0.3s ease-in-out;
+  }
+
   .navbar__buttons {
     display: none;
   }
